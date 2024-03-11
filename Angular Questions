@@ -11,6 +11,7 @@ Data-binding conceptPlaying with CSS to overrride css:
 	use of ::ng-deep
 	declaring classes in global scss
 forms validation - reactive and template
+ng container - ng template comparision and difference
 angular lifecycle hook - constructor, onChanges, onInit, doCheck, afterContentInit, afterContentChecked, afterViewInit, afterViewChecked, onDestroy 
 What is singleton design pattern and how angular make sure you get a singleton instance of your service when needed
 RxJS concepts -- Subjects, Behavior subjects, Observable, Promises, filter, map etc. subscription/unsubscription.
