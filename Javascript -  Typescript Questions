@@ -1,0 +1,21 @@
+closure with example
+Benefit of Typescript (Consider Data types, Classes,  inheritance, and interfaces). 
+Purpose of defining types & enums.
+let, var, const
+"this" keyword
+"use strict" directive in js
+setTimeout
+event bubling
+web hoisting
+event loop
+prototype
+string, array manipulations & functions
+ES6 concepts --- Object Destructuring, object cloning, Rest/Spread operator, higher order functions , promises.
+fetch API in making async http reuest
+debounce in js & wht its useful
+PWA ?
+DOM ?
+destructuring assignment, ES6
+default parameter
+"Symbol" data type
+undefined, null difference
