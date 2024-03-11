@@ -1,0 +1,48 @@
+Setting up Angular>>>
+Software Pre-requisite
+angular CLI coomands
+Create empty project using angular cli commands, step  by step.
+Angular Versions
+Angular migration. Been part of angular upgradation from js to 2,3,4,11,13,16,17?
+How to add Bootstrap UI framework or any into angular applications? via CDN ? via NPM package ?
+
+Data-binding conceptPlaying with CSS to overrride css:
+	View Encapsulation - None, Emulated, ShadowDOM. 
+	use of ::ng-deep
+	declaring classes in global scss
+forms validation - reactive and template
+angular lifecycle hook - constructor, onChanges, onInit, doCheck, afterContentInit, afterContentChecked, afterViewInit, afterViewChecked, onDestroy 
+What is singleton design pattern and how angular make sure you get a singleton instance of your service when needed
+RxJS concepts -- Subjects, Behavior subjects, Observable, Promises, filter, map etc. subscription/unsubscription.
+How does ngrx flow works, ie. how data flow between actions, reducer, selectors & components.
+monorepo. And nrwl/nx for monorepo Angular elements/library development.
+What are Directives, Pipes, decorators. Custom Directives and Custom Pipes
+Use of Async pipe  & benefits.
+Routegaurd, Lazy loading  with Preloading strategy 
+Angular universal
+input output decorator
+interceptor
+nfIf, ngFor, ngStyle, ngClass
+explain package.json - dependecies/ devdependencies
+bootstrapping angular project
+How would you analyses the performance in Angular application.
+What's the role of webpack in Angular application development.
+progressive web app
+jenkins related questions
+purpose of importing CommonModule in component / module file.
+What is Signals in Angular 17 ?
+
+Use of ng build command, how to create dist folder ?
+AOT & JIT compiler
+whats is tree-shaking ? - optimizers to removes unncessary files
+
+Services>>>
+what is DI (Dependency Injection) ? What angular does as part of Dependency Injection/ Services
+what is @Injectable
+why to use providedIn: 'root'
+
+Routing>>>
+What is routing in angular ?
+	can build SPA's with multiple views or pages within single HTML page. Can navigate betweeen diff components and views.
+
+router, routerLink
