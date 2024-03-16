@@ -10,8 +10,10 @@ web workers
 web storage - local storage/ session storage / cookies
 diff bet SVG & CANVAS
 diff bet inline & block elements
-difference between “display: none” and “visibility: hidden”
-position attribute
 iframe - nesting of webpage
 doctype - n its types
 meta tag, charset attribute
+how we can display youtube video in html?
+anchor tag vs link
+	anchor tag is used to create a hyperlink to another webpage.
+	link tag <link> defines a link between a document and an external resource and these are not clickable.
