@@ -3,32 +3,55 @@ Software Pre-requisite
 angular CLI commands
 Create empty project using angular cli commands, step  by step.
 Angular Versions
+main features of angular
+what is scope in angular
+what is zone
+what is DOM ? increment, virtual DOM ? 
 Angular migration. Been part of angular upgradation from js to 2,3,4,11,13,16,17?
 How to add Bootstrap UI framework or any into angular applications? via CDN ? via NPM package ?
-Data-binding concept
+Data-binding ? one way, two way
 Playing with CSS to overrride css:
 	View Encapsulation - None, Emulated, ShadowDOM. 
 	use of ::ng-deep
 	declaring classes in global scss
 forms validation - reactive and template, custom validator
 ng container - ng template comparision and difference
+what is a template in angular
 angular lifecycle hook - constructor, onChanges, onInit, doCheck, afterContentInit, afterContentChecked, afterViewInit, afterViewChecked, onDestroy 
+how to detect a route change in angular
 What is singleton design pattern and how angular make sure you get a singleton instance of your service when needed
-RxJS concepts -- Subjects, Behavior subjects, Observable, Promises, filter, map etc. subscription/unsubscription.
+RxJS concepts -- Subjects, Behavior subjects, Observable, filter, map etc. subscription/unsubscription.
+RxJS utility functions
 Promises - reolve, reject
-How does ngrx flow works, Store management i.e. how data flow between actions, reducer, selectors & components.
-monorepo. And nrwl/nx for monorepo Angular elements/library development.
 
 What are Directives, Custom Directives.
 nfIf, ngFor, ngStyle, ngClass
-what is decorators.
+what is decorators ? what are class, property, method, parameter decorator ? 
 What are pipes, create custom pipe, Use of Async pipe & benefits.
+custom element? example.
 
 Lazy loading  with Preloading strategy 
 communication between two componenets ? 
 input output decorator
+@viewchild
 without subscribe how we can pass data to html
 interceptor
+
+Services>>>
+what is DI (Dependency Injection) ? What angular does as part of Dependency Injection/ Services
+what is @Injectable
+why to use providedIn: 'root'
+
+
+Routing>>>
+What is routing in angular ?
+	can build SPA's with multiple views or pages within single HTML page. Can navigate betweeen diff components and views.
+wildcard route
+router, routerLink
+authguard
+Routegaurds
+
+
 explain package.json - dependecies/ devdependencies
 bootstrapping angular project
 How would you analyses the performance in Angular application.
@@ -37,20 +60,19 @@ progressive web app
 jenkins related questions
 purpose of importing CommonModule in component / module file.
 What is Signals in Angular 17 ?
-Angular universal
+Angular universal ?
+Angular Ivy ?
+How does ngrx flow works, Store management i.e. how data flow between actions, reducer, selectors & components.
+monorepo. And nrwl/nx for monorepo Angular elements/library development.
 
 Use of ng build command, how to create dist folder ?
 AOT & JIT compiler
 whats is tree-shaking ? - optimizers to removes unncessary files
 
-Services>>>
-what is DI (Dependency Injection) ? What angular does as part of Dependency Injection/ Services
-what is @Injectable
-why to use providedIn: 'root'
-Routegaurds
 
-Routing>>>
-What is routing in angular ?
-	can build SPA's with multiple views or pages within single HTML page. Can navigate betweeen diff components and views.
 
-router, routerLink
+
+
+
+
+
