@@ -1,7 +1,9 @@
 closure with example
 Benefit of Typescript (Consider Data types, Classes,  inheritance, and interfaces). 
+what are the data types
+var a=[1,3,4] typeof ?
 Purpose of defining types & enums.
-let, var, const
+let, var, const diff
 "this" keyword
 "use strict" directive in js
 setTimeout
@@ -11,6 +13,7 @@ event loop
 prototype
 string, array manipulations & functions
 ES6 concepts --- Object Destructuring, object cloning, Rest/Spread operator, higher order functions , promises.
+deep/ shallow copy
 fetch API in making async http reuest
 debounce in js & wht its useful
 PWA ?
@@ -18,4 +21,4 @@ DOM ?
 destructuring assignment, ES6
 default parameter
 "Symbol" data type
-undefined, null difference
+diff bet null undefined
