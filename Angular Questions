@@ -1,78 +1,98 @@
-Setting up Angular>>>
-Software Pre-requisite
-angular CLI commands
-Create empty project using angular cli commands, step  by step.
-Angular Versions
-main features of angular
-what is scope in angular
-what is zone
-what is DOM ? increment, virtual DOM ? 
-Angular migration. Been part of angular upgradation from js to 2,3,4,11,13,16,17?
-How to add Bootstrap UI framework or any into angular applications? via CDN ? via NPM package ?
-Data-binding ? one way, two way
-Playing with CSS to overrride css:
+Q: Setting up Angular>>>
+Q: Software Pre-requisite
+Q: angular CLI commands
+
+Q: Create empty project using angular cli commands, step  by step.
+A:	In directory cmd:
+		ng new app-name
+		cd app-name
+		ng serve
+	default angular application will be created and run on 4200 default port.
+	localhost:4200/
+
+Q: How to default angular favicon which shows in browser tab as icon ?
+A:	there is a favicon icon in src folder
+	remove link of favicon icon path from index.html
+	remove reference of favicon from angular.json
+
+Q: Angular Versions
+Q: main features of angular
+Q: what is scope in angular
+Q: what is zone
+Q: What is pollyfill.js
+Q: what is DOM ? increment, virtual DOM ? 
+Q: Angular migration. Been part of angular upgradation from js to 2,3,4,11,13,16,17?
+Q: How to add Bootstrap UI framework or any into angular applications? via CDN ? via NPM package ?
+Q: Data-binding ? one way, two way
+Q: Playing with CSS to overrride css:
 	View Encapsulation - None, Emulated, ShadowDOM. 
 	use of ::ng-deep
 	declaring classes in global scss
-forms validation - reactive and template, custom validator
-ng container - ng template comparision and difference
-what is a template in angular
-angular lifecycle hook - constructor, onChanges, onInit, doCheck, afterContentInit, afterContentChecked, afterViewInit, afterViewChecked, onDestroy 
-how to detect a route change in angular
-What is singleton design pattern and how angular make sure you get a singleton instance of your service when needed
-RxJS concepts -- Subjects, Behavior subjects, Observable, filter, map etc. subscription/unsubscription.
-RxJS utility functions
-Promises - reolve, reject
+Q: forms validation - reactive and template, custom validator
+Q: ng container - ng template comparision and difference
+Q: what is a template in angular
+Q: angular lifecycle hook - constructor, onChanges, onInit, doCheck, afterContentInit, afterContentChecked, afterViewInit, afterViewChecked, onDestroy 
+Q: how to detect a route change in angular
+Q: What is singleton design pattern and how angular make sure you get a singleton instance of your service when needed
+Q: RxJS concepts -- Subjects, Behavior subjects, Observable, filter, map etc. subscription/unsubscription.
 
-What are Directives, Custom Directives.
-nfIf, ngFor, ngStyle, ngClass
-what is decorators ? what are class, property, method, parameter decorator ? 
-What are pipes, create custom pipe, Use of Async pipe & benefits.
-custom element? example.
+Q: Observables, why its useful?
+A: 	Obsevables are useful to share same data within multiple components as they can subscribe same source and get latest updated data
+	It is based on angular's change detection strategy i.e., OnPush. Obseravle tell view if the data is updated, Thus View shows updated data to users.
+	Obervables are lazy. They wont get called without subscribe
 
-Lazy loading  with Preloading strategy 
-communication between two componenets ? 
-input output decorator
-@viewchild
-without subscribe how we can pass data to html
-interceptor
+Q: Promises?
+A:	promises are ot lazy. They get called when they get invoked.
+	use then intead of subscribe in obseravble.
+ 
+Q: RxJS utility functions
+Q: Promises - reolve, reject
 
-Services>>>
-what is DI (Dependency Injection) ? What angular does as part of Dependency Injection/ Services
-what is @Injectable
-why to use providedIn: 'root'
+Q: What are Directives, Custom Directives.
+Q: nfIf, ngFor, ngStyle, ngClass
+Q: diff between *ngFor & @for
+Q: what is decorators ? what are class, property, method, parameter decorator ? 
+Q: What are pipes, create custom pipe, Use of Async pipe & benefits.
+Q: custom element? example.
 
+Q: Lazy loading  with Preloading strategy 
+Q: communication between two componenets ? 
+Q: input output decorator
+Q: @viewchild
+Q: without subscribe how we can pass data to html
+Q: interceptor
 
-Routing>>>
-What is routing in angular ?
-	can build SPA's with multiple views or pages within single HTML page. Can navigate betweeen diff components and views.
-wildcard route
-router, routerLink
-authguard
-Routegaurds
+Q: Services>>>
+Q: what is DI (Dependency Injection) ? What angular does as part of Dependency Injection/ Services
+Q: what is @Injectable
+Q: why to use providedIn: 'root'
 
+Q: What is routing in angular ?
+A:	can build SPA's with multiple views or pages within single HTML page. Can navigate betweeen diff components and views.
 
-explain package.json - dependecies/ devdependencies
-bootstrapping angular project
-How would you analyses the performance in Angular application.
-What's the role of webpack in Angular application development.
-progressive web app
-jenkins related questions
-purpose of importing CommonModule in component / module file.
-What is Signals in Angular 17 ?
-Angular universal ?
-Angular Ivy ?
-How does ngrx flow works, Store management i.e. how data flow between actions, reducer, selectors & components.
-monorepo. And nrwl/nx for monorepo Angular elements/library development.
-
-Use of ng build command, how to create dist folder ?
-AOT & JIT compiler
-whats is tree-shaking ? - optimizers to removes unncessary files
+Q: How to add routing to angular application ? 
+A:	set routes array in app.routes. Define each route with path & component
+	Ex.: { path: 'first-component', component: FirstComponent }
+	Import routes into app.config, add to provideRouter function
+Q: wildcard route
+Q: router, routerLink
+Q: authguard
+Q: Routegaurds
 
 
+Q: explain package.json - dependecies/ devdependencies
+Q: bootstrapping angular project
+Q: How would you analyses the performance in Angular application.
+Q: What's the role of webpack in Angular application development.
+Q: progressive web app
+Q: jenkins related questions
+Q: purpose of importing CommonModule in component / module file.
+Q: What is Signals in Angular 17 ?
+Q: Angular universal ?
+Q: Angular Ivy ?
+Q: How does ngrx flow works, Store management i.e. how data flow between actions, reducer, selectors & components.
+Q: monorepo. And nrwl/nx for monorepo Angular elements/library development.
 
-
-
-
-
-
+Q: Use of ng build command, how to create dist folder ?
+Q: AOT & JIT compiler
+Q: whats is tree-shaking ? - optimizers to removes unncessary files
