@@ -1,24 +1,24 @@
-closure with example
-Benefit of Typescript (Consider Data types, Classes,  inheritance, and interfaces). 
-what are the data types
-var a=[1,3,4] typeof ?
-Purpose of defining types & enums.
-let, var, const diff
-"this" keyword
-"use strict" directive in js
-setTimeout
-event bubling
-web hoisting
-event loop
-prototype
-string, array manipulations & functions
-ES6 concepts --- Object Destructuring, object cloning, Rest/Spread operator, higher order functions , promises.
-deep/ shallow copy
-fetch API in making async http reuest
-debounce in js & wht its useful
-PWA ?
-DOM ?
-destructuring assignment, ES6
-default parameter
-"Symbol" data type
-diff bet null undefined
+Closure With Example
+Benefit Of Typescript (Consider Data Types, Classes,  Inheritance, And Interfaces). 
+What Are The Data Types
+Var A=[1,3,4] Typeof ?
+Purpose Of Defining Types & Enums.
+Let, Var, Const Diff
+"This" Keyword
+"Use Strict" Directive In Js
+Settimeout
+Event Bubling
+Web Hoisting
+Event Loop
+Prototype
+String, Array Manipulations & Functions
+Es6 Concepts --- Object Destructuring, Object Cloning, Rest/Spread Operator, Higher Order Functions , Promises.
+Deep/ Shallow Copy
+Fetch Api In Making Async Http Reuest
+Debounce In Js & Wht Its Useful
+Pwa ?
+Dom ?
+Destructuring Assignment, Es6
+Default Parameter
+"Symbol" Data Type
+Diff Bet Null Undefined
