@@ -1,19 +1,117 @@
-Html5 New Feature
-New Input Types In Html5 Forms
-Html5 Graphics Elements
-Semantic Elements
-Metadata In Html5
-Web Components
-Geo Location
-Manifest File 
-Web Workers
-Web Storage - Local Storage/ Session Storage / Cookies
-Diff Bet Svg & Canvas
-Diff Bet Inline & Block Elements
-Iframe - Nesting Of Webpage
-Doctype - N Its Types
-Meta Tag, Charset Attribute
-How We Can Display Youtube Video In Html?
-Anchor Tag Vs Link
-	Anchor Tag Is Used To Create A Hyperlink To Another Webpage.
-	Link Tag <Link> Defines A Link Between A Document And An External Resource And These Are Not Clickable.
+Q: Html5 New Feature, Advantages, Benefits
+A:	Supports Multi-media Video, Audio, Graphics, Etc.
+	Mobile Friendly
+	Supports Web Stoarge 
+	Supports Multi-threading
+	Introduce Geolocation
+
+
+Q: What Are Elements In Html5
+A:	Elements Use To Structure And Interpret Html5 Document
+	Elements Enlclosed Within Opening Closing Tag
+	Elements Ex. : <div></div>, <label></label>, Etc
+
+
+Q: What Are Tags In Html5
+A:	Tags Used To Define The Structure
+	Tags Only Hv Opening 
+	Tags Ex.: <br/> <hr/>, Etc
+
+
+Q: New Input Types In Html5 Forms
+A:	Date, Time, Text, Email, Passowrd
+	Color, Range, Tel	
+
+
+Q: Html5 Graphics Elements? Diff Bet Svg & Canvas
+A:	Svg (scalable Vector Graphics): Used To Create Vector-based Graphics, Such As Diagrams And Icons
+	Styles & Scripts Can B Used In Svg
+	Ex.: <svg Width="400" Height="110">
+  		<rect Width="300" Height="100" Style="fill: Rgb(0, 0, 255); Stroke-width: 3; Stroke: Rgb(0, 0, 0)" />
+	</svg>
+	Can Print In High Resolution
+
+	Canvas:	Used To Draw Graphics, Shapes, Pixel Based
+	Only Scripts Can Be Used In Canvas
+	Ex.: <canvas Id="mycanvas" Width="300" Height="100"></canvas>
+	Can Not Print In High Resolution	
+
+
+Q: Semantic Elements
+	Semantic Elements Are Descibe Its Purpose
+	Ex.: Header, Footert, Aside, Nav, Etc.
+
+
+Q New Tags In Multimedia
+A: 	<audio>, <video>, <embed>, <track>, Etc.
+
+
+Q: Web Storage - Diff Between Local Storage/ Session Storage / Cookies
+	Web Storage : Data Can Be Stored Locally Within The User’s Browser
+	Sessionstorage: Temporary Storage Available For The Duration Of The Page Session
+	Localstorage: Permanent Storage Available Until Data Is Deleted By The User
+
+
+Q: Drag & Drop In Html
+	Item Can Be Drag & Drop By Mouse
+	Item Can Be Copy, Move, Reorder, Delete Using Cursor
+	Set "draggable = True" Atrribute To Element
+
+
+Q: Anchor Tag Vs Link
+A:	Anchor Tag Is Used To Create A Hyperlink To Another Webpage. Clickable.
+	Link Tag <link> Defines A Link Between A Document And An External Resource And These Are Not Clickable.
+
+
+Q: What Is Anchor Tag & Target Attribute ?
+A:	‘href’ Attribute Used To Link To Other Web Pages
+	Target : Self - Open Url In Same Window
+		 Blank - Opens Url In Another Window
+
+
+Q: Three Types Of List In Html5
+A:	Ordered, Unordered, Description List.
+	<ul><li>abc</li><li>def</li></ul>
+	<ol><li>abc</li><li>def</li></ol>
+
+
+Q: Most Important Apis In Html5?	
+A:	Geolocation Api, Used To Identify The User’s Location
+	Web Speech Api, Which Provides Speech Recognition Functionality
+	Clipboard Api, Which Provides Copy, Cut, And Paste Functionality
+	History Api, Which Provides Access To The Browser Navigation History
+	Web Notifications Api, Used To Send Web-based Notifications To Users
+
+
+Q: Doctype - N Its Types
+	First Line Of Code Declared In Html,html5 Page
+	Tells Browser To Interpret The Document By Its Type And Version Of Which Markup Language Are Being Used
+
+
+Q: Metadata In Html5
+	Tells Browser, Search Engine, Web Application To Interpret A Document
+	It Is A Data That Describes Other Data, Data About Data.
+
+
+Q: Data Storage Using Html5
+A: 	Indexeddb Api, A Standard Maintained By The World Wide Web Consortium
+	Web Sql Database, Now Considered Deprecated
+
+
+Q: What Is Microdata In Html5
+A:	To Define The Custom Semantics Of Elements And Embed Custom Properties Within The Web Page
+	Helps In Seo, Provides Info About The Content Of Page So It Disaplys In Best Match Search Result On Internet
+
+
+Q: Geo Location
+A:	Geolocation Api Uses The Device’s Gps, Wifi Or Mobile Signal To Get Users Latitude And Longitude Coordinates
+
+
+// ============ Remaining Notes ======
+Q: How We Can Display Youtube Video In Html?
+Q: Meta Tag, Charset Attribute
+Q: Web Components	
+Q: Manifest File 
+Q: Web Workers
+Q: Diff Bet Inline & Block Elements
+Q: Iframe - Nesting Of Webpage
