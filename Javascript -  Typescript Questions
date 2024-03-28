@@ -1,24 +1,101 @@
-Closure With Example
-Benefit Of Typescript (Consider Data Types, Classes,  Inheritance, And Interfaces). 
-What Are The Data Types
-Var A=[1,3,4] Typeof ?
-Purpose Of Defining Types & Enums.
-Let, Var, Const Diff
-"This" Keyword
-"Use Strict" Directive In Js
-Settimeout
-Event Bubling
-Web Hoisting
-Event Loop
-Prototype
-String, Array Manipulations & Functions
-Es6 Concepts --- Object Destructuring, Object Cloning, Rest/Spread Operator, Higher Order Functions , Promises.
-Deep/ Shallow Copy
-Fetch Api In Making Async Http Reuest
-Debounce In Js & Wht Its Useful
-Pwa ?
-Dom ?
-Destructuring Assignment, Es6
-Default Parameter
-"Symbol" Data Type
-Diff Bet Null Undefined
+-----------------------------------
+-----------------------------------
+
+Q: Closure With Example ?
+A:	Closure is a form of lexical scoping
+	It gives a function ability to access variables, functions & arguments from the parent scope
+	It also has access to global scope variable
+	Ex. Callback function is a closure
+	helps Data Hiding and Encapsulation
+
+//-- CODE SNIPPET --
+
+const surname = "Luigi"; //-- global scope variable
+function parent() { 
+  const name = "Mario"; //-- initialise parent scope
+ 
+  //-- child function accessing variable & function from parents
+  function child() {
+    const age = 18;
+    console.log("name : ", name, "", surname);
+    console.log("age : ", age);
+  }
+
+  child(); //-- call child function
+}
+
+parent(); //-- call parent function
+-----------------------------------
+-----------------------------------
+
+Q: What is a callback function ?
+A: 	When a function simply accepts another function as an argument
+	A function which is to be executed after another function has finished execution
+	SetTimeout. SetInterval, etc. are example of callback
+	Runs code async ly with non blocking. Executes one after another
+
+//-- CODE SNIPPET --
+setTimeout(myFunction, 3000);
+
+
+// --- CODE SNIPPET START -----
+const surname = "Luigi"; //-- global scope variable
+
+function parent(parent_name, callback) {
+  const name = "Mario"; //-- initialise parent scope
+  callback(name); //-- call callback function
+}
+
+//-- child function accessing variable & function from parents
+function child(name) {
+  const age = 18;
+  console.log("age : ", age);
+  console.log("name: ", name, "", surname);
+}
+
+//-- call parent function, pass child function name as an argument
+parent("Super", child);
+
+-----------------------------------
+-----------------------------------
+
+
+
+Q: What is a callback Hell ?
+
+Q: What is Scope ?
+A:	Scope in accessibility of variables in different parts of your code. Global scope, block scope, function scope, etc
+
+
+Q: What is currying ?
+A:	Closues can be used in currying
+	where a function that takes multiple arguments is transformed into a series of functions that take a single argument
+
+Q: What is Garbage Collector?
+A: 	Garbage Collector free up unutilised memory.
+
+
+Q: Benefit Of Typescript (Consider Data Types, Classes,  Inheritance, And Interfaces).
+Q: What Are The Data Types
+Q: Var A=[1,3,4] Typeof ?
+Q: Purpose Of Defining Types & Enums.
+Q: Let, Var, Const Diff
+Q: "This" Keyword
+Q: "use strict"; Directive In Js
+Q: Settimeout
+Q: Event Bubling
+Q: Web Hoisting
+Q: Event Loop
+Q: Prototype
+Q: String, Array Manipulations & Functions
+Q: Es6 Concepts --- Object Destructuring, Object Cloning, Rest/Spread Operator, Higher Order Functions , Promises.
+Q: Deep/ Shallow Copy
+Q: Fetch Api In Making Async Http Reuest
+Q: Debounce In Js & Wht Its Useful
+Q: Pwa ?
+Q: Dom ?
+Q: Destructuring Assignment, Es6
+Q: Default Parameter
+Q: "Symbol" Data Type
+Q: Diff Bet Null Undefined
+Q: what is babel
