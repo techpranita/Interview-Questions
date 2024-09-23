@@ -1,0 +1,66 @@
+Angular services & dependency injection & providedIn to specify the root injector 
+HTTP interceptors. Manipulate headers. Pass tokens.
+routing, wildcard route
+routing auth guard
+lazy loading for modules and components
+Template drivern, Reactive forms validation
+directives
+pipes, pure, impure
+use of trackBy in ngFor
+http client & async data handling 
+content projection
+@viewchild
+input output operator
+observable subject broadcasting subscribe
+RXjs without subscribing - async pipe
+Approach for performance issues/ optimization
+AOT Compiler. Angular CLI for production builds
+Fork Joins in Angular //-- reduce API calls
+Fix memory leaks in angular application
+	OnDestroy lifecycle hook to unsubscribe from observables and clean up resources
+	RxJS operators like `takeUntil`
+Design pattern- singleton, observer, DI, Decorator, Facade, etc.
+Angular Resolvers  - service implements resolve, resolve in routes, access the resolved data using the ActivatedRoute in component.
+code mirror
+
+### Advanced Angular : 
+Custom elements
+Change Detection Strategy .OnPush
+Angular Universal for server-side rendering
+PWA
+
+mono-front end
+next js
+schadcn - chart
+redux
+blob storage
+
+
+### CSS frameworks ###
+bootstrap
+ngx bootstrap
+angular material
+flexbox
+bulma
+tailwind css
+vue.js
+
+
+### Project Assignments ###
+sticky notes, add notes
+shad cn dashboard panel
+end to end reactive forms
+use of google maps
+video stream
+virtual gallery
+copy of any website, amazon, netflix, etc.
+own portfolio AI
+weather app
+movie database
+real time chat app
+real estate app - property listing
+star rating
+Full user proile reactive form validation
+
+//- links:
+https://zerotomastery.io/blog/top-10-angular-projects-for-beginners-and-beyond/
