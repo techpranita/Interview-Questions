@@ -1,98 +1,318 @@
-Q: Setting Up Angular>>>
-Q: Software Pre-requisite
-Q: Angular Cli Commands
+### Angular QnA
 
-Q: Create Empty Project Using Angular Cli Commands, Step  By Step.
-A:	In Directory Cmd:
-		Ng New App-name
-		Cd App-name
-		Ng Serve
-	Default Angular Application Will Be Created And Run On 4200 Default Port.
-	Localhost:4200/
+Q: Setting up Angular. Software Pre-requisite
+A: 	Install node, you get node & npm version: node -v, npm -v
+	Install angular cli using npm : npm install -g @angular/cli, ng v
+	Install IDE like: Visual Studio Code
 
-Q: How To Default Angular Favicon Which Shows In Browser Tab As Icon ?
-A:	There Is A Favicon Icon In Src Folder
-	Remove Link Of Favicon Icon Path From Index.Html
-	Remove Reference Of Favicon From Angular.Json
+Q: angular CLI commands
+
+Q: Create empty project using angular cli commands, step  by step.
+A:	In directory cmd:
+		ng new app-name
+		cd app-name
+		ng serve
+	default angular application will be created and run on 4200 default port.
+	localhost:4200/
+
+Q: How to default angular favicon which shows in browser tab as icon ?
+A:	there is a favicon icon in src folder
+	remove link of favicon icon path from index.html
+	remove reference of favicon from angular.json
+
+
+
+Q. **What is Angular and how is it different from AngularJS?**
+   - Angular is a TypeScript-based open-source front-end web application platform led by the Angular Team at Google. It is a complete rewrite of AngularJS, focusing on modern development practices, performance, and maintainability.
+
+Q. **Explain Angular modules.**
+   - Angular modules (NgModule) are containers for a group of related components, directives, pipes, and services that are dedicated to an application domain, a workflow, or a closely related set of capabilities. They can import functionality from other modules and export their own functionality.
+
+Q. **What are decorators in Angular?**
+   - Decorators are functions that modify JavaScript classes. In Angular, decorators are used to attach metadata to classes, functions, or properties to declare their Angular-specific behavior.
+
+1. **What are the key features of Angular CLI?**
+   - Angular CLI (Command Line Interface) provides tools and commands to initialize, develop, scaffold, maintain, and test Angular applications. Key features include generating components, services, modules, and running unit tests using Karma and Protractor.
+
+2. **Explain the Angular component lifecycle hooks.**
+   - Angular components have lifecycle hooks that allow you to tap into key moments in the component's lifecycle. Examples include `ngOnInit`, `ngOnChanges`, `ngAfterViewInit`, and `ngOnDestroy`. These hooks provide opportunities to perform actions at specific stages of the component's existence.
+
+3. **Compare Angular modules vs. JavaScript modules (ES6).**
+   - Angular modules (`@NgModule`) are used to organize an application into cohesive blocks of functionality, whereas ES6 modules are used in JavaScript to modularize code and encapsulate functionality. Angular modules also facilitate lazy loading and dependency injection, which are not native concepts in ES6 modules.
+
+4. **What is Angular Ivy and how does it benefit Angular applications?**
+   - Angular Ivy is the latest rendering engine in Angular that offers improved bundle size, faster rebuilds, improved debugging, better type checking, and enhanced template type checking. It also enables features like better ahead-of-time (AOT) compilation and tree shaking for smaller production bundles.
+
+### Advanced Angular Concepts
+
+1. **Explain lazy loading in Angular and its benefits.**
+   - **Lazy loading** in Angular allows you to load modules only when they are needed, rather than loading everything at once when the application starts. This improves initial loading times and reduces the size of the initial bundle sent to the client, which is especially beneficial for large applications. Lazy loading is achieved by configuring routes using `loadChildren` in the routing module.
+
+2. **Describe Angular Dependency Injection (DI) and its role in Angular applications.**
+   - **Dependency Injection (DI)** in Angular is a design pattern used to create and provide instances of dependencies to classes. It helps manage dependencies between classes, promotes code reusability, and improves testability. Angular's DI system is hierarchical, with injectors providing dependencies to classes based on the hierarchy of components and modules.
+
+3. **What are Angular services? How are they different from components?**
+   - **Services** in Angular are classes that are responsible for encapsulating reusable business logic and data manipulation. They are typically singleton objects that are instantiated once and shared throughout the application via DI. Services are used to abstract data access, HTTP calls, and other operations that multiple components may need.
+   - **Difference:** Components are responsible for presenting data and handling user interactions in the UI, while services handle business logic, data manipulation, and interactions with external systems.
+
+### Advanced Angular Architecture
+
+1. **Explain the concept of Angular Universal and when would you use it?**
+   - **Angular Universal** is a technology that allows server-side rendering (SSR) of Angular applications. SSR renders the application on the server and sends a fully rendered page to the client. This improves initial load performance, facilitates better SEO, and provides a more reliable user experience, especially on slow network connections.
+   - **Use Cases:** Use Angular Universal for applications where SEO is critical, or where initial load time and perceived performance are important metrics.
+
+### Interview Questions for Angular Developers
+
+1. **How does Angular handle routing? Explain the role of RouterModule.**
+   - **Answer:** Angular uses the `RouterModule` to provide routing functionality. Routes are defined in the `RouterModule.forRoot()` method in the root module, and child routes can be defined in feature modules using `RouterModule.forChild()`. Routes specify which component to display for a given URL and can be guarded with route guards for authentication and authorization.
+
+2. **What are Angular directives? Give examples of built-in directives and explain their usage.**
+   - **Answer:** Angular directives are markers on a DOM element that tell Angular to attach a specified behavior to that element or transform the DOM element and its children. Examples include `*ngIf` for conditional rendering, `*ngFor` for iteration, and `ngClass` for dynamic class binding.
+	- they add behavior to an existing DOM element or an existing component instance.
+
+### Angular Concepts
+
+1. **Explain the Angular component lifecycle hooks and their use cases.**
+   - Angular component lifecycle hooks allow you to tap into key moments in a component's lifecycle. Examples include `ngOnInit`, `ngOnChanges`, `ngAfterViewInit`, and `ngOnDestroy`.
+   - **Use Cases:** `ngOnInit` for initialization logic, `ngOnChanges` to respond to changes in input properties, `ngAfterViewInit` for initialization after component's view is initialized, and `ngOnDestroy` to clean up resources.
+
+2. **Describe Angular modules (`@NgModule`). What are their key features and why are they important?**
+   - Angular modules are containers for a group of related components, directives, pipes, and services. They help organize an application into cohesive blocks of functionality.
+   - **Key Features:** Importing and exporting functionalities, providers array for dependency injection, entry components, and declarations for components, directives, and pipes.
+   - **Importance:** Modularization, lazy loading, encapsulation, and reusability of code across different parts of the application.
+
+### Advanced Angular Concepts
+
+1. **Explain Angular's change detection mechanism and how would you optimize it for better performance?**
+   - Angular uses a zone-based change detection mechanism by default, which tracks changes to application state and updates the DOM accordingly.
+   - **Optimization Techniques:** Implementing OnPush change detection strategy to reduce change detection cycles by checking only when input properties change or events occur. Using `ChangeDetectorRef` to manually trigger change detection when needed. Using immutable data structures and avoiding heavy computations in templates to minimize change detection overhead.
+
+2. **What are Angular services and how do you manage dependencies in Angular applications?**
+   - Angular services are classes that handle data logic, HTTP requests, or any other operations that are not directly related to presenting views.
+   - **Dependency Management:** Angular's dependency injection (DI) system is used to inject dependencies into components, services, and other Angular constructs. Dependencies are declared in the constructor of the receiving class, making components and services loosely coupled and promoting code maintainability and testability.
+
+Q. Angular resolver?
+	- are essential for pre-fetching data before navigating to a route, ensuring that the component has all necessary data available when it initializes.
+	- service implements resolve, resolve in routes, access the resolved data using the ActivatedRoute in component
 
 Q: Angular Versions
-Q: Main Features Of Angular
-Q: What Is Scope In Angular
-Q: What Is Zone
-Q: What Is Pollyfill.Js
-Q: What Is Dom ? Increment, Virtual Dom ? 
-Q: Angular Migration. Been Part Of Angular Upgradation From Js To 2,3,4,11,13,16,17?
-Q: How To Add Bootstrap Ui Framework Or Any Into Angular Applications? Via Cdn ? Via Npm Package ?
-Q: Data-binding ? One Way, Two Way
-Q: Playing With Css To Overrride Css:
-	View Encapsulation - None, Emulated, Shadowdom. 
-	Use Of ::Ng-deep
-	Declaring Classes In Global Scss
-Q: Forms Validation - Reactive And Template, Custom Validator
-Q: Ng Container - Ng Template Comparision And Difference
-Q: What Is A Template In Angular
-Q: Angular Lifecycle Hook - Constructor, Onchanges, Oninit, Docheck, Aftercontentinit, Aftercontentchecked, Afterviewinit, Afterviewchecked, Ondestroy 
-Q: How To Detect A Route Change In Angular
-Q: What Is Singleton Design Pattern And How Angular Make Sure You Get A Singleton Instance Of Your Service When Needed
-Q: Rxjs Concepts -- Subjects, Behavior Subjects, Observable, Filter, Map Etc. Subscription/Unsubscription.
+Q: main features of angular
+Q: what is scope in angular
+Q: what is zone.js -
+	zone.js is used to detect changes
+Q: What is pollyfill.js
+Q: what is DOM ? increment, virtual DOM ? 
+Q: Angular migration. Been part of angular upgradation from js to 2,3,4,11,13,16,17?
+Q: How to add Bootstrap UI framework or any into angular applications? via CDN ? via NPM package ?
+Q: Data-binding ? one way, two way
+Q: Playing with CSS to overrride css:
+	View Encapsulation - None, Emulated, ShadowDOM. 
+	use of ::ng-deep
+	declaring classes in global scss
+Q: forms validation - reactive and template, custom validator
+Q: ng container - ng template comparision and difference
+Q: what is a template in angular
+Q: angular lifecycle hook - constructor, onChanges, onInit, doCheck, afterContentInit, afterContentChecked, afterViewInit, afterViewChecked, onDestroy 
+Q: how to detect a route change in angular
+Q: What is singleton design pattern and how angular make sure you get a singleton instance of your service when needed
+Q: RxJS concepts -- Subjects, Behavior subjects, Observable, filter, map etc. subscription/unsubscription.
 
-Q: Observables, Why Its Useful?
-A: 	Obsevables Are Useful To Share Same Data Within Multiple Components As They Can Subscribe Same Source And Get Latest Updated Data
-	It Is Based On Angular's Change Detection Strategy I.E., Onpush. Obseravle Tell View If The Data Is Updated, Thus View Shows Updated Data To Users.
-	Obervables Are Lazy. They Wont Get Called Without Subscribe
+Q: Observables, why its useful?
+A: 	Obsevables are useful to share same data within multiple components as they can subscribe same source and get latest updated data
+	It is based on angular's change detection strategy i.e., OnPush. Obseravle tell view if the data is updated, Thus View shows updated data to users.
+	Obervables are lazy. They wont get called without subscribe
 
 Q: Promises?
-A:	Promises Are Ot Lazy. They Get Called When They Get Invoked.
-	Use Then Intead Of Subscribe In Obseravble.
+A:	promises are not lazy. They get called when they get invoked.
+	use then intead of subscribe in obseravble.
  
-Q: Rxjs Utility Functions
-Q: Promises - Reolve, Reject
+Q: RxJS utility functions
+Q: Promises - reolve, reject
+What is an Observable in RxJS?
 
-Q: What Are Directives, Custom Directives.
-Q: Nfif, Ngfor, Ngstyle, Ngclass
-Q: Diff Between *Ngfor & @For
-Q: What Is Decorators ? What Are Class, Property, Method, Parameter Decorator ? 
-Q: What Are Pipes, Create Custom Pipe, Use Of Async Pipe & Benefits.
-Q: Custom Element? Example.
+Q:  difference between BehaviorSubject and Observable in RxJS
 
-Q: Lazy Loading  With Preloading Strategy 
-Q: Communication Between Two Componenets ? 
-Q: Input Output Decorator
-Q: @Viewchild
-Q: Without Subscribe How We Can Pass Data To Html
-Q: Interceptor
+Q: What are Directives, Custom Directives.
+Q: nfIf, ngFor, ngStyle, ngClass
+Q: diff between *ngFor & @for
+
+Q:  What are the benefits of trackBy?
+	- The trackBy function is a valuable tool that can significantly improve the efficiency of your application 
+	by reducing unnecessary DOM updates and rendering only the items that have changed.
+	*ngFor="let item of items; trackBy: trackByFn"
+	 trackByFn(index: number, item: any): number { 
+        	return item.id; 
+    	}
+	
+
+Q: what is decorators ? what are class, property, method, parameter decorator ? 
+   - Angular decorators (@Component, @Directive, @Injectable, etc.) attach metadata to classes, functions, or properties to declare their Angular-specific behavior.
+Q: What are pipes, create custom pipe, Use of Async pipe & benefits.
+Q: custom element? example.
+
+Q: Lazy loading  with Preloading strategy 
+Q: communication between two componenets ? 
+Q: input output decorator
+Q: @viewchild
+Q: without subscribe how we can pass data to html
+Q: interceptor. Pass the token in every request.
 
 Q: Services>>>
-Q: What Is Di (Dependency Injection) ? What Angular Does As Part Of Dependency Injection/ Services
-Q: What Is @Injectable
-Q: Why To Use Providedin: 'root'
+Q: what is DI (Dependency Injection) ? What angular does as part of Dependency Injection/ Services
+Q: what is @Injectable
+Q: why to use providedIn: 'root'
 
-Q: What Is Routing In Angular ?
-A:	Can Build Spa's With Multiple Views Or Pages Within Single Html Page. Can Navigate Betweeen Diff Components And Views.
+Q: What is routing in angular ?
+A:	can build SPA's with multiple views or pages within single HTML page. Can navigate betweeen diff components and views.
 
-Q: How To Add Routing To Angular Application ? 
-A:	Set Routes Array In App.Routes. Define Each Route With Path & Component
-	Ex.: { Path: 'first-component', Component: Firstcomponent }
-	Import Routes Into App.Config, Add To Providerouter Function
-Q: Wildcard Route
-Q: Router, Routerlink
-Q: Authguard
+Q: How to add routing to angular application ? 
+A:	set routes array in app.routes. Define each route with path & component
+	Ex.: { path: 'first-component', component: FirstComponent }
+	Import routes into app.config, add to provideRouter function
+Q: wildcard route
+Q: router, routerLink
+Q: authguard
 Q: Routegaurds
 
+Q: explain package.json - dependecies/ devdependencies
+Q: bootstrapping angular project
+Q: How would you analyses the performance in Angular application.
+Q: What's the role of webpack in Angular application development.
 
-Q: Explain Package.Json - Dependecies/ Devdependencies
-Q: Bootstrapping Angular Project
-Q: How Would You Analyses The Performance In Angular Application.
-Q: What's The Role Of Webpack In Angular Application Development.
-Q: Progressive Web App
-Q: Jenkins Related Questions
-Q: Purpose Of Importing Commonmodule In Component / Module File.
-Q: What Is Signals In Angular 17 ?
-Q: Angular Universal ?
+Q: purpose of importing CommonModule in component / module file.
+
+/// ---- Advance Angular Q ---- ///
+
+Q: What is Signals in Angular 17 ?
+Q: Angular universal ?
 Q: Angular Ivy ?
-Q: How Does Ngrx Flow Works, Store Management I.E. How Data Flow Between Actions, Reducer, Selectors & Components.
-Q: Monorepo. And Nrwl/Nx For Monorepo Angular Elements/Library Development.
+Q: How does ngrx flow works, Store management i.e. how data flow between actions, reducer, selectors & components.
+Q: progressive web app
 
-Q: Use Of Ng Build Command, How To Create Dist Folder ?
-Q: Aot & Jit Compiler
-Q: Whats Is Tree-shaking ? - Optimizers To Removes Unncessary Files
+Q: Monorepo. And nrwl/nx for monorepo Angular elements/library development.
+A:	A micro-frontend is a development approach where a web application's front end is divided into smaller, self-contained modules. 
+	Each module can be developed, tested, and deployed independently, enabling teams to work on specific features or functions within the application.
+
+Q: Use of ng build command, how to create dist folder ?
+Q: AOT & JIT compiler
+Q: whats is tree-shaking ? - optimizers to removes unncessary files
+
+Q: What is Monkey patching ?
+A:	When you replace the function but retain the original behaviour, it is function interception.
+	Replace methods / classes / attributes / functions at runtime, e.g. to stub out a function during testing;
+
+micro frontend / mono frontend
+proces of migrating project
+async 
+pure, impure pipe
+fork join
+standalone component, what difference it makes?
+package.json and package.lock.json
+code mirror
+dynamic component
+SaaS Scss, Mixin/ Css
+Psuedo Classes & Psuedo Elements
+custom directives
+AOT
+Authguard
+Authentication/ Authorization
+interceptor. Pass the token in every request
+pass json data one url to another url
+find index : const numbers = [1, 2, 3, 4, 5];
+router-outlet
+global errors, what to use- to handle global errors: try catch
+
+
+
+#################################
+### Scenario-Based Questions ###
+
+Q. **You are tasked with optimizing an existing Angular application for performance. Outline your approach and specific techniques you would implement.**
+   - **Approach:** 
+     - Conduct a performance audit using tools like Lighthouse, Chrome DevTools to identify bottlenecks.
+     - Implement lazy loading for modules and components to reduce initial bundle size and improve load times.
+     - Optimize change detection strategy by using OnPush change detection and Immutable.js or similar libraries for immutable data handling.
+     - Utilize Angular Universal for server-side rendering to improve time-to-content and SEO.
+     - Implement code splitting and lazy loading of routes to reduce initial payload and improve navigation speed.
+
+
+Q. **You encounter a performance issue in an Angular application. How would you investigate and resolve it?**
+   - **Investigation:** Use browser developer tools to profile and identify bottlenecks (e.g., heavy DOM manipulation, excessive API calls).
+   - **Resolution:** Optimize change detection strategy (OnPush), 
+			implement lazy loading for modules and components, 
+			use trackBy in ngFor, 
+			leverage Angular Universal for server-side rendering, and 
+			utilize Angular CLI for production builds.
+
+
+Q. **You are migrating a large AngularJS (1.x) application to Angular. Outline your migration strategy and considerations.**
+   - **Strategy:**
+     - **Assessment:** Analyze the existing AngularJS application to understand its structure, dependencies, and functionalities.
+     - **Incremental Migration:** Plan to migrate components or modules incrementally from AngularJS to Angular. Start with critical or standalone components that can be easily isolated and tested.
+     - **Refactoring:** Refactor AngularJS components into Angular components, services into Angular services, and update templates and data bindings.
+     - **Testing:** Implement comprehensive unit tests and integration tests to ensure functionality is maintained during migration.
+     - **Deployment:** Gradually deploy migrated parts of the application while maintaining backward compatibility until the entire application is migrated.
+
+
+Q. **You encounter memory leaks in an Angular application. How would you diagnose and fix them?**
+   - **Diagnosis:**
+     - Use Chrome DevTools or other profiling tools to monitor memory usage and identify potential memory leaks, such as growing heap size or increasing number of listeners.
+     - Use timeline recordings to identify components or services that are not properly unsubscribing from observables or cleaning up resources.
+   - **Fixes:**
+     - Ensure proper use of OnDestroy lifecycle hook to unsubscribe from observables and clean up resources.
+     - Implement ChangeDetectionStrategy.OnPush to optimize change detection and reduce unnecessary updates.
+     - Use RxJS operators like `takeUntil` to automatically unsubscribe from observables when a component is destroyed.
+     - Review component and service lifecycles to ensure resources are properly managed and released.
+
+
+Q. **Describe a complex Angular project you've worked on. What were the architectural decisions you made and why?**
+   - **Example Project:** Describe a project where you implemented a modular architecture with lazy loading to improve application performance and scalability. Explain how you organized modules, components, services, and state management (e.g., NgRx, Redux) to achieve separation of concerns and maintainability.
+   - **Architectural Decisions:** Discuss decisions related to component hierarchy, data flow, state management, and the use of design patterns like Observer, Singleton, or Facade patterns to simplify complex interactions between components and services.
+
+
+Q. **How do you ensure code quality and maintainability in a large-scale Angular application?**
+   - **Answer:** I enforce coding standards and best practices using tools like ESLint or TSLint. 
+	I conduct code reviews to ensure adherence to architectural patterns (e.g., Angular style guide), modularization, and separation of concerns. 
+	I emphasize unit testing with tools like Jasmine and Karma to maintain code quality and catch bugs early.
+
+
+##############################################
+### Design Patterns / Angular Architecture ### 
+//--  design patterns are widely used in Angular applications to promote modularization, code reusability, and maintainability. 
+//--  Understanding and applying these patterns effectively can significantly improve the structure and scalability of Angular projects
+
+Q. **Explain the Singleton design pattern.**
+   - The Singleton pattern ensures a class has only one instance and provides a global point of access to it. 
+	It involves a static method to access the instance and a private constructor to prevent instantiation from outside the class.
+   **Implementation in Angular:** Angular services are typically Singleton by default when registered in the root injector (`providedIn: 'root'`). This ensures there is only one instance of the service throughout the application
+
+Q. **Describe Angular’s component-based architecture.**
+   - Angular’s architecture is based on components, which are the fundamental building blocks of Angular applications. 
+	Components are reusable, self-contained, and encapsulate the presentation and behavior of a part of the UI.
+
+Q. **Explain the Observer design pattern and its implementation in Angular.**
+   - The Observer pattern involves an object (subject) maintaining a list of dependents (observers) that are notified of any state changes, usually by calling one of their methods. 
+	In Angular, this pattern is commonly used with RxJS observables, where components can subscribe to data streams and react to changes.
+
+Q. **Describe the role of services in Angular and best practices for using them.**
+   - Services in Angular are used to encapsulate reusable business logic and data manipulation. 
+	Best practices include
+	using dependency injection to inject services into components and other services, 
+	using providedIn to specify the root injector for services, and 
+	using HTTP interceptors for centralized error handling and authentication.
+
+
+#####################################
+### Angular Testing and Debugging ### 
+
+Q. **Describe different types of testing in Angular and how you would approach them.**
+   - **Unit Testing:** Testing individual components, services, and pipes in isolation using Jasmine and Karma.
+   - **Integration Testing:** Testing how different components work together within modules.
+   - **End-to-End Testing:** Testing the complete application flow from start to finish using Protractor.
+   - Approach: Write tests that are independent, isolated, and focused on behavior rather than implementation details. 
+	Use mocking for dependencies and stubs for services. Automate tests using continuous integration tools like Jenkins or GitLab CI.
+
+#####################################
+
+
+
